@@ -1,12 +1,12 @@
 ## Users
 puts 'Creating users...'
 
-joe = User.create!(name: 'Youssef Sobhy', age: 23, gender: 'male')
-omar = User.create!(name: 'Omar Mekky', age: 30, gender: 'male')
-salma = User.create!(name: 'Salma Osama', age: 27, gender: 'female')
-hoda = User.create!(name: 'Hoda Hamad', age: 24, gender: 'female')
-bahia = User.create!(name: 'Bahia', age: 27, gender: 'female')
-eman = User.create!(name: 'Eman', age: 29, gender: 'female')
+joe = User.create!(email: 'joe@gmail.com', name: 'Youssef Sobhy', password: '12345678', age: 23, gender: 'male')
+omar = User.create!(email: 'omar@gmail.com', name: 'Omar Mekky', password: '12345678', age: 30, gender: 'male')
+salma = User.create!(email: 'salma@gmail.com', name: 'Salma Osama', password: '12345678', age: 27, gender: 'female')
+hoda = User.create!(email: 'hoda@gmail.com', name: 'Hoda Hamad', password: '12345678', age: 24, gender: 'female')
+bahia = User.create!(email: 'bahia@gmail.com', name: 'Bahia', password: '12345678', age: 27, gender: 'female')
+eman = User.create!(email: 'eman@gmail.com', name: 'Eman', password: '12345678', age: 29, gender: 'female')
 
 ## Todos
 puts 'Creating todos...'

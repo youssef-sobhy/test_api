@@ -6,8 +6,10 @@ class User < ApplicationRecord
   has_many :todos, dependent: :destroy
 
   ## Validations
-  validates :name, :age, :gender, presence: true
+  has_secure_password
+  validates :name, :email, :age, :gender, presence: true
   validates :gender, inclusion: { in: genders.keys }
+  validates :email, email_format: { message: 'Invalid email!' }
 
   ## Callbacks
   before_create :prepare_defaults

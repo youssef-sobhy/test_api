@@ -6,6 +6,10 @@ git_source(:github) do |repo_name|
 end
 
 gem 'rack-cors', :require => 'rack/cors'
+gem 'bcrypt', '~> 3.1', '>= 3.1.11'
+gem 'validates_email_format_of'
+gem 'jwt'
+gem 'dotenv-rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
